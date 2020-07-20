@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Макет Портфолио</title>
+    
+    <!-- Нормализация стилей -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    
+    <!-- Собственные стили -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!--  Подключение веб-шрифтов  -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet"> 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon-16x16.png">
+
+    <!-- Put this script tag to the <head> of your page -->
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+
+    <script type="text/javascript">
+      VK.init({apiId: 7191687, onlyWidgets: true});
+    </script>
+
+</head>
+<body>
+   
+<div class="portfolio-sigle-page">
+    <div class="container">
+        <img src="img/portfolio/big/site-personal.jpg" alt="Макет Портфолио">
+        <a href="index.html" class="button-back">&larr; Вернуться на главную</a>
+
+        <div class="comment-wrapper">
+            <!-- Put this div tag to the place, where the Comments block will be -->
+            <div id="vk_comments"></div>
+            <script type="text/javascript">
+            VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+            </script>
+        </div>
+
+    </div>
+</div>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(56033158, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/56033158" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+<!-- /Yandex.Metrika counter -->
+
+<!-- VK Widget -->
+    <div id="vk_community_messages"></div>
+    <script type="text/javascript">
+    VK.Widgets.CommunityMessages("vk_community_messages", 150361349, {expandTimeout: "10000",widgetPosition: "left",tooltipButtonText: "Есть вопрос?"});
+    </script>
+
+    <!-- Chatra {literal} -->
+    <script>
+        (function(d, w, c) {
+            w.ChatraID = 'djM8SC4zvdHcWxTiR';
+            var s = d.createElement('script');
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = 'https://call.chatra.io/chatra.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'Chatra');
+    </script>
+    <!-- /Chatra {/literal} -->
+    
+</body>
+</html>

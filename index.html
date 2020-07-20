@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт портфолио - Webcademy.ru</title>
+    
+    <!--  Инструкция для IE  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!--  Отображать страницу в масштабе 100%  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Нормализация стилей -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    
+    <!--  Подключение веб-шрифтов  -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet"> 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon-16x16.png">
+
+    <link rel="stylesheet" type="text/css" href="libs/animate.css/animate.css">
+
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+    
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:400,700|Yeon+Sung&display=swap" rel="stylesheet">
+
+    <!-- Собственные стили -->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    
+
+<!-- ...................................... 
+
+HEADER
+
+...................................... -->
+<div class="header"> 
+    <div class="header__title wow fadeInUp">Алекс Крестьянников</div>
+    <div class="header__slogan wow fadeInUpBig">Верстка сайтов на HTML и CSS<br> HTML5 CSS3 JS jQuery</div>
+
+    <a href="#ex1" rel="modal:open" class="button" target="_blank">Перезвоните мне</a>
+
+    <div id="ex1" class="modal animated zoomIn">
+        <form action="php/mail.php" class="contact_form" method="POST">
+
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Сайт Портфолио">
+            <input type="hidden" name="admin_email" value="krestyannikovalex@yandex.ru">
+            <input type="hidden" name="email_from" value="info@f0350099.xsph.ru">
+            <input type="hidden" name="form_subject" value="Сообщение с сайта">
+            <!-- END Hidden Required Fields -->
+            
+            <h2>Заполните заявку</h2>
+            <div class="subtitle">и мы свяжемся с вами</div>
+            
+            <label for="f_name">Имя:</label>
+            <input type="text" id="f_name" name="Имя" placeholder="">
+    
+            <label for="f_email">Телефон:</label>
+            <input type="text" id="f_phone" name="Телефон" placeholder="">
+    
+            <input type="submit" value="Отправить заявку">
+    
+        </form>
+    </div>
+
+    <div class="header__arrow wow fadeInDown">
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+</div>   
+    
+
+    
+    
+<!-- ...................................... 
+
+PORTFOLIO
+
+...................................... -->
+<div class="portfolio">
+    <div class="container">
+    
+    <div class="title wow fadeInUp">
+        Портфолио
+    </div>
+        
+    <div class="row">
+        
+        <!-- Работа в портфолио -->
+        <div class="col-4">
+            <div class="portfolio-item wow fadeInUp">
+                <div class="portfolio-item__img">
+                    <img src="img/portfolio/project_organica.jpg" alt="Макет Органика">
+                </div>
+                <div class="portfolio-item__title">
+                    <a href="work-organica.html">Макет Органика</a>
+                </div>
+                <div class="portfolio-item__text">
+                    <p>Верстка одностраничного сайта по PSD макету.</p>
+                </div>
+            </div>
+        </div>
+        <!-- // Работа в портфолио -->
+        
+        <!-- Работа в портфолио -->
+        <div class="col-4">
+            <div class="portfolio-item wow fadeInUp">
+                <div class="portfolio-item__img">
+                    <img src="img/portfolio/project_apollo.jpg" alt="Учебный макет Аполло">
+                </div>
+                <div class="portfolio-item__title">
+                    <a href="work-apollo.html">Учебный макет Аполло</a>
+                </div>
+                <div class="portfolio-item__text">
+                    <p>Верстка лендинга хостинг компании. Мобильная адаптивность.</p>
+                </div>
+            </div>
+        </div>
+        <!-- // Работа в портфолио -->
+        
+        <!-- Работа в портфолио -->
+        <div class="col-4">
+            <div class="portfolio-item wow fadeInUp">
+                <div class="portfolio-item__img">
+                    <img src="img/portfolio/project_portfolio.jpg" alt="Личный сайт портфолио">
+                </div>
+                <div class="portfolio-item__title">
+                    <a href="work-portfolio.html">Личный сайт портфолио</a>
+                </div>
+                <div class="portfolio-item__text">
+                    <p>Верстка личного сайта портфолио на котором вы сейчас находитесь.</p>
+                </div>
+            </div>
+        </div>
+        <!-- // Работа в портфолио -->
+    </div>
+    
+    </div>
+</div>
+    
+    
+    
+      
+<!-- ...................................... 
+
+FOOTER
+
+...................................... -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 wow fadeInLeft">
+                <p class="footer__name">Алекс Крестьянников</p>
+                <p>HTML верстка и разработка сайтов</p>
+            </div>
+            <div class="col-4 wow fadeInUp">
+                <p class="footer__social">Мои профили в социальных сетях:</p>
+                <p class="footer__social-icons">
+                   
+                    <a href="#" target="_blank">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                    
+                    <a href="#" target="_blank">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    
+                    <a href="#" target="_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    
+                    <a href="#" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    
+                    <a href="#" target="_blank">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a>
+                    
+                </p>
+            </div>
+            <div class="col-4 wow fadeInRight">
+                <div><a href="#" class="button" target="_blank">связаться Вконтакте</a></div>
+                <p>Напишите мне, чтобы заказать или узнать<br> стоимость верстки вашего проекта</p> 
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+    
+    
+
+    <script src="libs/wow.js/wow.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(56033158, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/56033158" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- VK Widget -->
+    <div id="vk_community_messages"></div>
+    <script type="text/javascript">
+    VK.Widgets.CommunityMessages("vk_community_messages", 150361349, {expandTimeout: "10000",widgetPosition: "left",tooltipButtonText: "Есть вопрос?"});
+    </script>
+
+    <!-- Chatra {literal} -->
+    <script>
+        (function(d, w, c) {
+            w.ChatraID = 'djM8SC4zvdHcWxTiR';
+            var s = d.createElement('script');
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = 'https://call.chatra.io/chatra.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'Chatra');
+    </script>
+    <!-- /Chatra {/literal} -->
+    
+</body>
+</html>
